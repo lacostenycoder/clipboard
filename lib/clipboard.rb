@@ -48,6 +48,15 @@ module Clipboard
   def copy(*args)
     Clipboard.implementation.copy(*args)
   end
+
+  def clip
+    Clipboard.copy(self)
+  end
+
 end
 
 Clipboard.implementation
+
+class String
+	include Clipboard
+end

@@ -20,6 +20,10 @@ describe Clipboard do
     expect( Clipboard.paste ).to eq "FOO\nBAR"
   end
 
+  it "adds clip method to string class" do
+    expect("test".clip).to eq("test")
+  end
+
   if RUBY_VERSION >= "1.9"
     it "can copy & paste with multibyte char" do
       Encoding.default_external = "utf-8"

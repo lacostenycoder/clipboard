@@ -5,8 +5,10 @@ Lets you access the clipboard on Linux, MacOS or Windows.
 * <tt>Clipboard.copy</tt>
 * <tt>Clipboard.paste</tt>
 * <tt>Clipboard.clear</tt>
+* <tt>"yourstring".clip</tt>
 
 == Remarks
+This version adds .clip method to the String class.
 
 === Non-gem Requirements
 * *Linux*: +xclip+ or +xsel+, you can install it on debian/ubuntu with <tt>sudo apt-get install xclip</tt>
